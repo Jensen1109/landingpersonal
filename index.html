@@ -3,57 +3,69 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css" />
 <title>Landing Page Simple Adaptativa</title>
 </head>
 <body>
 
-    <section class="content">
-        <header>
-            <nav class="navbar">
-                <a href="">Home</a>
-                <a href="">Services</a>
-                <a href="">About Us</a>
-                <a href="">Appointment</a>
-                <a href="">Contact</a>
-            </nav>
-        </header>
-    </section>
+<!-- Bloque principal de navegación -->
+<section class="navbar">
+    <header class="navbar__header">
+    <nav class="navbar__nav">
+        <a href="#" class="navbar__link">Home</a>
+        <a href="#" class="navbar__link">Services</a>
+        <a href="#" class="navbar__link">About Us</a>
+        <a href="#" class="navbar__link">Appointment</a>
+        <a href="#" class="navbar__link">Contact</a>
+    </nav>
+    </header>
+</section>
 
-<header>
-    <h1>Jogosports</h1>
-    <p>Si eres micrero llegaste al lugar las mejores zapatillas para pisarla y ser imparable en la cancha🐐</p>
+<!-- Encabezado principal -->
+<header class="hero">
+    <h1 class="hero__titlulo">Jogosports</h1>
+    <p class="hero__descripcion">
+    Si eres micrero llegaste al lugar: las mejores zapatillas para pisarla y ser imparable en la cancha 🐐
+    </p>
 </header>
 
-<div class="container">
-    <img src="img/fondos joma.jpg" alt="Imagen Destacada" class="hero-image" />
+<main class="main">
+    <!-- Imagen destacada -->
+    <div class="main__imagen-container">
+    <img src="img/fondos joma.jpg" alt="Imagen Destacada" class="main__hero-imagen" />
+    </div>
 
-    <section class="features" aria-label="Características principales">
-    <article class="feature">
-        <h2>ATENCIÓN AL CLIENTE</h2>
-        <p>Condiciones de compra</p>
-        <p>Transporte y entrega</p>
+    <!-- Sección de características -->
+    <section class="características" aria-label="Características principales">
+    <article class="características__item">
+        <h2 class="características__title">ATENCIÓN AL CLIENTE</h2>
+        <p class="características__text">Condiciones de compra</p>
+        <p class="características__text">Transporte y entrega</p>
     </article>
-    <article class="feature">
-        <h2>LA MEJOR EMPRESA JOMA</h2>
-        <p>Historia</p>
-        <p>Condigo de conducta</p>
+
+    <article class="características__item">
+        <h2 class="características__title">LA MEJOR EMPRESA JOMA</h2>
+        <p class="características__text">Historia</p>
+        <p class="características__text">Código de conducta</p>
     </article>
-    <article class="feature">
-        <h2>SOPORTE DE  24/7 AL CLIENTE</h2>
-        <p>Almacen distribuidores</p>
-        <p>Jomanet</p>
+
+    <article class="características__item">
+        <h2 class="características__title">SOPORTE 24/7 AL CLIENTE</h2>
+        <p class="características__text">Almacén distribuidores</p>
+        <p class="características__text">Jomanet</p>
     </article>
     </section>
 
+    <!-- Llamado a la acción -->
     <section class="cta" aria-label="Llamado a la acción">
-    <button type="button">Ver catalogo</button>
+    <button class="cta__button" type="button">Ver catálogo</button>
     </section>
-</div>
+</main>
 
-<footer>
-    &copy; 2024 Nuestra Compañía. Todos los derechos reservados.
+<!-- Pie de página -->
+<footer class="footer">
+    <p class="footer__text">&copy; 2024 Nuestra Compañía. Todos los derechos reservados.</p>
 </footer>
+
 </body>
 </html>
-

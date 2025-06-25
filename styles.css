@@ -1,147 +1,156 @@
 /* Reset básico para eliminar márgenes y rellenos predeterminados */
-* {
-    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
-    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total de los elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilo general para el cuerpo de la página */
-body {
-    margin: 0; /* Elimina el margen del cuerpo */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la fuente del texto */
-    background: #f5f8fa; /* Establece un color de fondo claro */
-    color: #222; /* Establece el color del texto */
-    line-height: 1.6; /* Aumenta la altura de línea para mejorar la legibilidad */
-    padding: 1rem; /* Agrega un relleno alrededor del contenido del cuerpo */
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f8fa;
+    color: #222;
+    line-height: 1.6;
+    padding: 1rem;
 }
 
 /* Estilos para la barra de navegación */
-.navbar a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    padding: 50px; /* Agrega un relleno alrededor de los enlaces */
-    color: #000000; /* Establece el color del texto de los enlaces */
-    transition: 1.8s; /* Agrega una transición suave para cambios de estilo */
+.navbar__link{
+    text-decoration: none;
+    padding: 20px;
+    color: #000000;
+    transition: 1.8s;
+    display: inline-block;
 }
 
-.navbar a:hover {
-    transition: 1.2s; /* Agrega una transición suave al pasar el mouse */
-    color: rgb(252, 17, 0); /* Cambia el color del texto al pasar el mouse */
+.navbar__link:hover{
+    transition: 1.2s;
+    color: rgb(252, 17, 0);
 }
 
-/* Estilo para la sección de contenido */
-.content {
-    background-color: slateblue; /* Establece un color de fondo para la sección de contenido */
+/* Estilo para la sección de navegación */
+.navbar{
+    background-color: slateblue;
+    text-align: center;
 }
 
-/* Estilos para el encabezado */
-header {
-    text-align: center; /* Centra el texto dentro del encabezado */
-    padding: 2rem 1rem 1rem; /* Agrega relleno alrededor del encabezado */
+/* Estilos para el encabezado principal */
+.hero{
+    text-align: center;
+    padding: 2rem 1rem 1rem;
 }
 
-header h1 {
-    font-size: 2rem; /* Establece el tamaño de fuente del título */
-    margin: 0 0 0.5rem; /* Elimina el margen superior e inferior, y agrega un margen inferior */
-    color: #1766b1; /* Establece el color del título */
-    user-select: none; /* Evita que el texto sea seleccionable */
+.hero__titlulo{
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+    color: #1766b1;
+    user-select: none;
+    font-weight: bold;
 }
 
-header p {
-    font-size: 1.1rem; /* Establece el tamaño de fuente del párrafo */
-    color: #555; /* Establece el color del texto del párrafo */
-    margin: 0; /* Elimina el margen del párrafo */
+.hero__descripcion{
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0;
 }
 
-/* Contenedor principal para centrar y limitar el ancho */
-.container {
-    width: 100%; /* Establece el ancho al 100% del contenedor padre */
-    max-width: 900px; /* Limita el ancho máximo a 900px */
-    margin: 2rem auto; /* Agrega márgenes superior e inferior, y centra horizontalmente */
+/* Contenedor principal */
+.main{
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
 }
 
 /* Estilo para la imagen destacada */
-.hero-image {
-    display: block; /* Asegura que la imagen se comporte como un bloque */
-    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
-    margin-bottom: 2rem; /* Agrega un margen inferior a la imagen */
-    user-select: none; /* Evita que la imagen sea seleccionable */
+.main__hero-imagen{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    user-select: none;
 }
 
 /* Sección de características */
-.features {
-    margin-bottom: 2rem; /* Agrega un margen inferior a la sección de características */
+.características{
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-.feature {
-    background: white; /* Establece un color de fondo blanco para cada característica */
-    margin-bottom: 1.5rem; /* Agrega un margen inferior entre características */
-    padding: 1.5rem; /* Agrega relleno dentro de cada característica */
-    border-radius: 10px; /* Agrega bordes redondeados a cada característica */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Agrega una sombra sutil a cada característica */
-    display: inline-block; /* Permite que las características se alineen lado a lado */
-    vertical-align: top; /* Alinea las características en la parte superior */
-    width: 100%; /* Establece el ancho de cada característica al 100% */
-    margin-left: 8px; /* Agrega un margen izquierdo a cada característica */
+.características__item{
+    background: white;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
 }
 
-.feature h2 {
-    margin-top: 0; /* Elimina el margen superior del título de la característica */
-    color: #1766b1; /* Establece el color del título de la característica */
+.características__title{
+    margin-top: 0;
+    color: #1766b1;
+    font-weight: bold;
+    text-align: left;
+}
+
+.características__text{
+    margin: 0.5rem 0;
+    text-align: left;
 }
 
 /* Llamado a la acción */
-.cta {
-    text-align: center; /* Centra el texto dentro de la sección de llamado a la acción */
-    margin-bottom: 3rem; /* Agrega un margen inferior a la sección de llamado a la acción */
+.cta{
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.cta button {
-    background-color: #1766b1; /* Establece el color de fondo del botón */
-    color: white; /* Establece el color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    padding: 1rem 2rem; /* Agrega relleno dentro del botón */
-    font-size: 1.2rem; /* Establece el tamaño de fuente del texto del botón */
-    border-radius: 30px; /* Agrega bordes redondeados al botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Agrega una transición suave para el color de fondo */
-    user-select: none; /* Evita que el botón sea seleccionable */
+.cta__button{
+    background-color: #1766b1;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
-.cta button:hover,
-.cta button:focus {
-    background-color: #0e4178; /* Cambia el color de fondo del botón al pasar el mouse o al enfocar */
-    outline: none; /* Elimina el contorno del botón al enfocar */
+.cta__button:hover,
+.cta__button:focus{
+    background-color: #0e4178;
+    outline: none;
 }
 
 /* Estilos para el pie de página */
-footer {
-    text-align: center; /* Centra el texto dentro del pie de página */
-    font-size: 0.9rem; /* Establece el tamaño de fuente del pie de página */
-    color: #666; /* Establece el color del texto del pie de página */
+.footer{
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
 }
 
-/* Media Queries para adaptabilidad */
-/* Tablet >= 600px - dos columnas para características */
-@media (min-width: 600px) {
-    .feature {
-        width: 48%; /* Establece el ancho de cada característica al 48% */
-        margin-right: 4%; /* Agrega un margen derecho a cada característica */
-    }
-    /* Quitar margen a pares para 2 columnas */
-    .feature:nth-child(2n) {
-        margin-right: 0; /* Elimina el margen derecho en cada segunda característica */
+.footer__text{
+    margin: 0;
+}
+
+/* Media Queries para adaptabilidad sin usar flex ni gap */
+@media (min-width: 600px){
+    .features__item {
+        width: 44%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 }
 
-/* Desktop >= 900px - tres columnas para características */
-@media (min-width: 900px) {
-    .feature {
-        width: 30.3%; /* Establece el ancho de cada característica al 30.3% */
-        margin-right: 4.6%; /* Agrega un margen derecho a cada característica */
-    }
-    .feature:nth-child(3n) {
-        margin-right: 0; /* Elimina el margen derecho en cada tercera característica */
+@media (min-width: 900px){
+    .features__item {
+        width: 28%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
